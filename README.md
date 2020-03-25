@@ -5,6 +5,8 @@
 ## Usage
 ```js
 const exec = require('actions-exec-wrapper');
+// instead of
+// const exec = require('@actions/exec');
 
 const options = {};
 options.cwd = './lib';
