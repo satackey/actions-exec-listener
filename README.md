@@ -8,9 +8,7 @@ const exec = require('actions-exec-wrapper');
 
 const options = {};
 options.cwd = './lib';
-const { stdout: stdBuffer, stderr: errBuffer } = await exec.exec('node', ['index.js', 'foo=bar'], options);
-const myOutput = stdBuffer.toString();
-const myError = errBuffer.toString();
+const { stdoutStr: myOutput, stderrStr: myError } = await exec.exec('node', ['index.js', 'foo=bar'], options);
 ```
 
 ### Using @actions/exec
@@ -41,3 +39,12 @@ $ npm install actions-exec-wrapper
 $ # or
 $ yarn add actions-exec-wrapper
 ```
+
+## Description
+- stdout
+- stdoutStr
+- stderr
+- stderrStr
+- stdline
+- errline
+- debug

@@ -51,4 +51,3 @@ module.exports = {
   ...actionsExec,
   exec,
 }
-// module.exports.exec = exec
