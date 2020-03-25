@@ -43,10 +43,23 @@ $ yarn add actions-exec-wrapper
 ```
 
 ## Description
-- stdout
-- stdoutStr
-- stderr
-- stderrStr
-- stdline
-- errline
-- debug
+It can be used in the same way as [`@actions/exec`](https://github.com/actions/toolkit/tree/master/packages/exec), except for the return value.
+
+## Return values
+`require('actions-exec-wrapper').exec` returns object containing the below keys.
+- Extended from `@actions/exec`
+  - `stdout` _Buffer_
+  - `stderr` _Buffer_
+  - `stdline` _string_
+  - `errline` _string_
+  - `debug` _string_
+- Added by `actions-exec-wrapper`
+  - `stdoutStr`
+    - Returned valude of `stdout.toString()`.
+  - `stderrStr`
+    - Returned valude of `stderr.toString()`.
+
+## Contribution
+PRs are accepted.
+
+If you are having trouble or future request, [post new issue](https://github.com/satackey/actions-exec-wrapper/issues/new).
