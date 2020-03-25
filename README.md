@@ -8,7 +8,7 @@ const exec = require('actions-exec-wrapper');
 
 const options = {};
 options.cwd = './lib';
-const { stdout: stdBuffer, stderr: errBuffer } = await exec.exec('node', ['index.js', 'foo=bar'], options)';
+const { stdout: stdBuffer, stderr: errBuffer } = await exec.exec('node', ['index.js', 'foo=bar'], options);
 const myOutput = stdBuffer.toString();
 const myError = errBuffer.toString();
 ```
