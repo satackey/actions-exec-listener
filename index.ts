@@ -1,7 +1,7 @@
 const actionsExec = require('@actions/exec')
-import execInterfaces from '@actions/exec/lib/interfaces'
+import { ExecOptions } from '@actions/exec/lib/interfaces'
 
-const exec = async (command: string, args?: string[], options?: execInterfaces.ExecOptions) => {
+const exec = async (command: string, args?: string[], options?: ExecOptions) => {
   let stdout = Buffer.concat([], 0)
   let stderr = Buffer.concat([], 0)
   let stdline = ''
@@ -38,12 +38,17 @@ const exec = async (command: string, args?: string[], options?: execInterfaces.E
   return {
     exitCode,
     stdout,
+    stdoutStr: stdout.toString(),
     stderr,
+    stderrStr: stderr.toString(),
     stdline,
     errline,
     debug,
   }
 }
 
-actionsExec.exec = exec
-module.exports = actionsExec
+module.exports = {
+  ...actionsExec,
+  exec,
+}
+// module.exports.exec = exec
