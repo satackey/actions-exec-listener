@@ -45,4 +45,5 @@ const exec = async (command: string, args?: string[], options?: execInterfaces.E
   }
 }
 
-export default exec
+actionsExec.exec = exec
+module.exports = actionsExec
