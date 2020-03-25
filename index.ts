@@ -47,7 +47,8 @@ const exec = async (command: string, args?: string[], options?: ExecOptions) => 
   }
 }
 
-module.exports = {
-  ...actionsExec,
+const { exec: _, ...exportActionsExec } = actionsExec
+
+export = {
   exec,
 }
