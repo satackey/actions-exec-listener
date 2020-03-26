@@ -1,10 +1,10 @@
-# actions-exec-wrapper
+# actions-exec-listener
 
 [@actions/exec](https://www.npmjs.com/package/@actions/exec) wrapper to get listener data value as return value.
 
 ## Usage
 ```js
-const exec = require('actions-exec-wrapper');
+const exec = require('actions-exec-listener');
 // instead of
 // const exec = require('@actions/exec');
 
@@ -37,23 +37,23 @@ Above code from [actions/toolkit repository](https://github.com/actions/toolkit/
 
 ## Install
 ```shell
-$ npm install actions-exec-wrapper
+$ npm install actions-exec-listener
 $ # or
-$ yarn add actions-exec-wrapper
+$ yarn add actions-exec-wlistener
 ```
 
 ## Description
 It can be used in the same way as [`@actions/exec`](https://github.com/actions/toolkit/tree/master/packages/exec), except for the return value.
 
 ## Return values
-`require('actions-exec-wrapper').exec` returns object containing the below keys.
+`require('actions-exec-listener').exec` returns object containing the below keys.
 - Extended from `@actions/exec`
   - `stdout` _Buffer_
   - `stderr` _Buffer_
   - `stdline` _string_
   - `errline` _string_
   - `debug` _string_
-- Added by `actions-exec-wrapper`
+- Added by `actions-exec-listener`
   - `stdoutStr`
     - Returned valude of `stdout.toString()`.
   - `stderrStr`
@@ -62,4 +62,4 @@ It can be used in the same way as [`@actions/exec`](https://github.com/actions/t
 ## Contribution
 PRs are accepted.
 
-If you are having trouble or future request, [post new issue](https://github.com/satackey/actions-exec-wrapper/issues/new).
+If you are having trouble or future request, [post new issue](https://github.com/satackey/actions-exec-listener/issues/new).
