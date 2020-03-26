@@ -1,9 +1,9 @@
 {
-  "name": "actions-exec-wrapper",
-  "version": "0.0.5",
+  "name": "actions-exec-listener",
+  "version": "0.0.1",
   "description": "@actions/exec wrapper to get listener data value as return value.",
   "main": "dist/index.js",
-  "repository": "git@github.com:satackey/actions-exec-wrapper.git",
+  "repository": "git+https://github.com/satackey/actions-exec-listener.git",
   "author": "satackey <21271711+satackey@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
