@@ -39,7 +39,7 @@ Above code from [actions/toolkit repository](https://github.com/actions/toolkit/
 ```shell
 $ npm install actions-exec-listener
 $ # or
-$ yarn add actions-exec-wlistener
+$ yarn add actions-exec-listener
 ```
 
 ## Description
