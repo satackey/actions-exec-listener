@@ -55,9 +55,9 @@ It can be used in the same way as [`@actions/exec`](https://github.com/actions/t
   - `debug` _string_
 - Added by `actions-exec-listener`
   - `stdoutStr`
-    - Returned valude of `stdout.toString()`.
+    - Returned value of `stdout.toString()`.
   - `stderrStr`
-    - Returned valude of `stderr.toString()`.
+    - Returned value of `stderr.toString()`.
 
 ## Contribution
 PRs are accepted.
