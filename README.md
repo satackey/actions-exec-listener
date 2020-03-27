@@ -62,4 +62,4 @@ It can be used in the same way as [`@actions/exec`](https://github.com/actions/t
 ## Contribution
 PRs are accepted.
 
-If you are having trouble or future request, [post new issue](https://github.com/satackey/actions-exec-listener/issues/new).
+If you are having trouble or feature request, [post new issue](https://github.com/satackey/actions-exec-listener/issues/new).
