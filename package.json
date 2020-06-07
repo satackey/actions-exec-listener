@@ -1,6 +1,6 @@
 {
   "name": "actions-exec-listener",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@actions/exec wrapper to get listener data value as return value.",
   "main": "dist/index.js",
   "repository": "git+https://github.com/satackey/actions-exec-listener.git",
