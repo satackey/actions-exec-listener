@@ -12,7 +12,6 @@
   "devDependencies": {
     "@actions/exec": "^1.0.4",
     "@types/node": "^13.9.3",
-    "@zeit/ncc": "^0.22.3",
     "typescript": "^3.9.5"
   }
 }
