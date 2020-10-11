@@ -7,7 +7,7 @@
   "author": "satackey <21271711+satackey@users.noreply.github.com>",
   "license": "MIT",
   "peerDependencies": {
-    "@actions/exec": ">1"
+    "@actions/exec": "~1"
   },
   "devDependencies": {
     "@actions/exec": "^1.0.4",
