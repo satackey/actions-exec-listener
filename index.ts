@@ -52,8 +52,8 @@ export const exec = async (command: string, args?: string[], options?: ExecOptio
   }
 
   const exitCode = await actionsExec.exec(command, args, {
-    listeners,
     ...options,
+    listeners,
   })
 
   return {
