@@ -1,7 +1,7 @@
 import * as actionsExec from '@actions/exec'
 import { ExecOptions } from '@actions/exec/lib/interfaces'
 
-const exec = async (command: string, args?: string[], options?: ExecOptions) => {
+export const exec = async (command: string, args?: string[], options?: ExecOptions) => {
   const originalListeners = options?.listeners
   let stdout = Buffer.concat([], 0)
   let stderr = Buffer.concat([], 0)
@@ -66,9 +66,4 @@ const exec = async (command: string, args?: string[], options?: ExecOptions) => 
     errline,
     debug,
   }
-}
-
-export = {
-  ...actionsExec.exec,
-  exec,
 }
